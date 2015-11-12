@@ -1,2 +1,2 @@
-# static
-Static web app
+# laverna
+Laverna application for IndieHosters

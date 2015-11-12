@@ -1,0 +1,4 @@
+web:
+  image: indiehosters/laverna
+  volumes:
+    - ./data:/var/www/html
