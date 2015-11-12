@@ -1,4 +1,4 @@
 web:
-  image: indiehosters/laverna
+  image: nginx
   volumes:
     - ./data:/var/www/html
