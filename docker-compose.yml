@@ -1,6 +1,13 @@
-web:
-  image: kyma/docker-nginx
-  volumes:
-    - ./data:/var/www
-  environment:
-    - VIRTUAL_HOST
+version: '2'
+networks:
+  lb_web:
+    external: true
+services:
+  web:
+    image: kyma/docker-nginx
+    volumes:
+      - ./data:/var/www
+    environment:
+      - VIRTUAL_HOST
+    networks:
+    - lb_web
