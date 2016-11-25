@@ -1,7 +1,6 @@
 web:
-  image: nginx
+  image: kyma/docker-nginx
   volumes:
-    - ./nginx.conf:/etc/nginx/nginx.conf:ro
-    - ./data:/var/www/html
+    - ./data:/var/www
   environment:
     - VIRTUAL_HOST
