@@ -4,10 +4,11 @@ networks:
     external: true
 services:
   web:
-    image: kyma/docker-nginx
+    image: nginx:alpine
     volumes:
-      - ./data:/var/www
+    - ./data:/var/www
+    - ./nginx.conf:/etc/nginx/nginx.conf:ro
     environment:
-      - VIRTUAL_HOST
+    - VIRTUAL_HOST
     networks:
     - lb_web
