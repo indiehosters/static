@@ -1,2 +1,2 @@
-# laverna
-Laverna application for IndieHosters
+# Static
+Static application for IndieHosters
